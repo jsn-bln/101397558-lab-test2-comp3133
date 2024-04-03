@@ -1,0 +1,17 @@
+.launch-card {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .mission-patch {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .launch-details {
+    flex: 1;
+  }
+  

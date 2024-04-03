@@ -1,0 +1,16 @@
+<div>
+  <h2>SpaceX Launches</h2>
+  <div *ngIf="launches.length > 0">
+    <div *ngFor="let launch of launches" class="launch-card">
+      <img [src]="launch.mission_patch_small" alt="Mission Patch" class="mission-patch">
+      <div class="launch-details">
+        <h3>{{ launch.mission_name }}</h3>
+        <p><strong>Launch Year:</strong> {{ launch.launch_year }}</p>
+        <p><strong>Details:</strong> {{ launch.details }}</p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="launches.length === 0">
+    No launches found.
+  </div>
+</div>
